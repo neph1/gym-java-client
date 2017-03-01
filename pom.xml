@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.deeplearning4j</groupId>
     <artifactId>gym-java-client</artifactId>
-    <version>0.7.2</version>
+    <version>0.7.2-SNAPSHOT</version>
 
     <name>gym-java-client</name>
     <description>A Java client for Open AI's Reinforcement Learning Gym</description>
@@ -126,7 +126,6 @@
         </plugins>
 
         <pluginManagement>
-            <plugins>
             <plugins>
                 <plugin>
                     <artifactId>maven-source-plugin</artifactId>
