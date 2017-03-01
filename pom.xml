@@ -174,6 +174,19 @@
                         </execution>
                     </executions>
                 </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-release-plugin</artifactId>
+                    <version>2.5.3</version>
+                    <configuration>
+                        <mavenExecutorId>forked-path</mavenExecutorId>
+                        <localCheckout>true</localCheckout>
+                        <pushChanges>false</pushChanges>
+                        <tagNameFormat>${project.name}-@{project.version}-intropro</tagNameFormat>
+                        <!--<arguments>-Dmaven.deploy.skip=true -DskipTests -Denv.LIBND4J_HOME=${LIBND4J_HOME}</arguments>-->
+                        <arguments>${arguments}</arguments>
+                    </configuration>
+                </plugin>
             </plugins>
         </pluginManagement>
     </build>
