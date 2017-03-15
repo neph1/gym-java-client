@@ -216,12 +216,12 @@
                 <snapshotRepository>
                     <id>snapshots</id>
                     <name>local-jfrog</name>
-                    <url>http://jenkins-master.eastus.cloudapp.azure.com:8081/artifactory/libs-snapshot-local</url>
+                    <url>http://master-jenkins.eastus.cloudapp.azure.com:8081/artifactory/libs-snapshot-local</url>
                 </snapshotRepository>
                 <repository>
                     <id>snapshots</id>
                     <name>local-jfrog</name>
-                    <url>http://jenkins-master.eastus.cloudapp.azure.com:8081/artifactory/libs-release-local</url>
+                    <url>http://master-jenkins.eastus.cloudapp.azure.com:8081/artifactory/libs-release-local</url>
                 </repository>
             </distributionManagement>
         </profile>
@@ -237,12 +237,12 @@
                 <snapshotRepository>
                     <id>local-nexus</id>
                     <name>local-nexus</name>
-                    <url>http://jenkins-master.eastus.cloudapp.azure.com:8088/nexus/content/repositories/snapshots</url>
+                    <url>http://master-jenkins.eastus.cloudapp.azure.com:8088/nexus/content/repositories/snapshots</url>
                 </snapshotRepository>
                 <repository>
                     <id>local-nexus</id>
                     <name>local-nexus</name>
-                    <url>http://jenkins-master.eastus.cloudapp.azure.com:8088/nexus/content/repositories/releases</url>
+                    <url>http://master-jenkins.eastus.cloudapp.azure.com:8088/nexus/content/repositories/releases</url>
                 </repository>
             </distributionManagement>
             <build>
@@ -263,7 +263,7 @@
                         <extensions>true</extensions>
                         <configuration>
                             <serverId>local-nexus</serverId>
-                            <nexusUrl>http://jenkins-master.eastus.cloudapp.azure.com:8088/nexus/</nexusUrl>
+                            <nexusUrl>http://master-jenkins.eastus.cloudapp.azure.com:8088/nexus/</nexusUrl>
                             <!--<skipStagingRepositoryClose>true</skipStagingRepositoryClose>-->
                             <!--<stagingProfileId>11537a3f5fa97</stagingProfileId>-->
                         </configuration>
