@@ -177,8 +177,8 @@
                     <nexusUrl>https://oss.sonatype.org/</nexusUrl>
                     <skipStagingRepositoryClose>true</skipStagingRepositoryClose>
                 </configuration>
-            </plugin>
-        </plugins>-->
+            </plugin>-->
+        </plugins>
     </build>
 
     <profiles>
