@@ -32,6 +32,11 @@ public class DiscreteSpace implements ActionSpace<Integer> {
         return a;
     }
 
+    @Override
+    public int getSize() {
+        return size;
+    }
+
     public Integer noOp() {
         return 0;
     }

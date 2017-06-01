@@ -12,12 +12,7 @@ import org.nd4j.linalg.factory.Nd4j;
  */
 
 @Value
-public class ArrayObservationSpace<O> implements ObservationSpace<O> {
-
-    String name;
-    int[] shape;
-    INDArray low;
-    INDArray high;
+public class ArrayObservationSpace<O> extends AbstractObservationSpace<O> {
 
     public ArrayObservationSpace(int[] shape) {
         name = "Custom";

@@ -15,13 +15,7 @@ import org.nd4j.linalg.factory.Nd4j;
  */
 
 @Value
-public class GymObservationSpace<O> implements ObservationSpace<O> {
-
-    String name;
-    int[] shape;
-    INDArray low;
-    INDArray high;
-
+public class GymObservationSpace<O> extends AbstractObservationSpace<O> {
 
     public GymObservationSpace(JSONObject jsonObject) {
 

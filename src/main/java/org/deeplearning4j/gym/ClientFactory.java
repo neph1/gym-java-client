@@ -30,11 +30,13 @@ public class ClientFactory {
         } catch (JSONException e) {
             throw new RuntimeException("Environment id not found");
         }
+        Client client = new Client();
+        client.instanceId = instanceId;
+        client.observationSpace = fetchObservationSpace(url, instanceId);
+        client.actionSpace = fetchActionSpace(url, instanceId);
+        client.url = url;
 
-        GymObservationSpace<O> observationSpace = fetchObservationSpace(url, instanceId);
-        AS actionSpace = fetchActionSpace(url, instanceId);
-
-        return new Client(url, envId, instanceId, observationSpace, actionSpace, render);
+        return client;
 
     }
 
